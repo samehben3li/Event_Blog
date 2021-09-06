@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const uri = "mongodb+srv://sameh:sam@123@cluster0.z47th.mongodb.net/events";
+const uri = "mongodb+srv://sameh:sameh123@cluster0.uk5oo.mongodb.net/events?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }).then(res => {
   console.log("DB Connected!")
 }).catch(err => {
